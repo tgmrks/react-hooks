@@ -1,17 +1,17 @@
 import React from 'react';
 
-class NewComp extends React.Component {
+class ClassComp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            message: "Click the button bellow to subscribe",
+            message: "Click the button",
             btn: "Subscribe"
         };
     }
 
     BtnChange = () => {
         this.setState({
-            message: "Hit the bell",
+            message: "Button was clicked",
             btn: "Subscribed"
         });
     };
@@ -25,4 +25,4 @@ class NewComp extends React.Component {
         );
     }
 }
-export default NewComp;
+export default ClassComp;

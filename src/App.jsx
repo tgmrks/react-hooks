@@ -1,10 +1,12 @@
 import './App.css';
-import NewComp from './NewComp'
+import ClassComp from './ClassComp'
+import FunctionComp from './FunctionComp'
 
 function App() {
   return (
     <div>
-      <NewComp />
+      <ClassComp />
+      <FunctionComp />
     </div>
   );
 }
