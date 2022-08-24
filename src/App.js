@@ -1,9 +1,10 @@
 import './App.css';
+import Reducer from './Reducer'
 
 function App() {
   return (
     <div className="App">
-      Hello World!
+      <Reducer />
     </div>
   );
 }
