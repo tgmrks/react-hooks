@@ -1,10 +1,10 @@
 import './App.css';
-import Effect from './Effect';
+import Ref from './Ref'
 
 function App() {
   return (
     <div className="App">
-      <Effect />
+      <Ref />
     </div>
   );
 }
