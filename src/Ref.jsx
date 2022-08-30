@@ -15,13 +15,11 @@ function Ref() {
 
     return (
         <div>
+            <h3>My name is [{name}] and it used to be [{prevName.current}]</h3>
             <input
                 ref={inputRef} type="text"
                 onChange={e => setName(e.target.value)}
             />
-            <p>
-                My name is [{name}] and it used to be [{prevName.current}]
-            </p>
             <button onClick={Focus}>Focus</button>
         </div>
     );
