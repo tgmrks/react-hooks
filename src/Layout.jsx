@@ -12,8 +12,8 @@ function Layout() {
     
     return(
         <div>
-            <button onClick={() => setValue(0)}>Change value!</button>
             <h3>value: {value}</h3>
+            <button onClick={() => setValue(0)}>Change value!</button>
         </div>
     );
 }
