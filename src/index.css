@@ -14,3 +14,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div {
+  border: 5px solid black;
+  border-style: dotted;
+  padding: 10px;
+}
+
