@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+### `git switch <branch>`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Switch to a branch to check an example for important hooks in React and basic concepts.
 
-## Available Scripts
+### List of branches: 
+```
+main
+context
+state
+props
+useEffect
+useLayoutEffect
+useReducer
+useRef
+```
 
-In the project directory, you can run:
+## main
+Plain project to start new branches.
 
-### `yarn start`
+## context
+This example shows how to use Context API as a hook. Context API is a way to manage and share states among components instead of passing them  as props. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## state
+Managing states in class component and function component.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## props
+How to pass props down to a child class component and child function component.
 
-### `yarn test`
+## useEffect
+It allows to perform side effects to the component. For example, fetching data, directly updating DOM, timers. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+It expect two arguments: a function to apply execute the side effect and  dependencies to determine what to listen to:
 
-### `yarn build`
+```
+useEffect(<function>, <dependency>)
+```
+* no dependency: executes every time a state is updated.
+* if empty [ ]: executes only once.
+* one or many: executes when one of the states informed update.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## useLayoutEffect
+Similar to *useEffect*, but it executes before the layout is rendered. It is synchronous, meaning that the component will only render after useLayoutEffect executes. While *useEffect* is asynchronous.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+It is useful to avoid excessive re-rendering, forcing some data to be ready before the layout renders. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## useReducer
+It allows for a custom logic useful when managing complex states and helps to condense several states under one function. 
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## useRef
+It allows to persist value between renders and can be used to store mutable values (not a state). Useful to access DOM elements directly. 
