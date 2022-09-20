@@ -48,3 +48,9 @@ It allows for a custom logic useful when managing complex states and helps to co
 
 ## useRef
 It allows to persist value between renders and can be used to store mutable values (not a state). Useful to access DOM elements directly. 
+
+## Router
+React Router is a solution for page routing. It's not in Create React App, it must be added to you project: 
+```
+yarn add react-router-dom
+```
