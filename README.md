@@ -54,3 +54,8 @@ React Router is a solution for page routing. It's not in Create React App, it mu
 ```
 yarn add react-router-dom
 ```
+## useMemo
+The React useMemo Hook returns a **memoized value**, it only runs when one of its dependencies update. This can improve performance.
+
+## useCallback
+The React useCallback Hook returns a **memoized callback function**, it only runs when one of its dependencies update. This can improve performance.
